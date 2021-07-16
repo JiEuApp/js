@@ -1,4 +1,4 @@
-
+	mui.init();
 
 		mui.plusReady(function () {
 			//var main = plus.android.runtimeMainActivity();  
