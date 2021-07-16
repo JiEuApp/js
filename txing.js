@@ -16,36 +16,48 @@
         }
 
         $('#QQ').click(function(event) {
-            var btn = ['取消','<span style="font-weight: bold;color: #e7534d">确认</span>']
-            mui.confirm('<hr class="style-two" style="height: 3px"/><p style="height:18px;"></p><p style="text-align: center;margin-left: 3px;font-size: 14px;color: #888">ＱＱ第三方授权登录，确认绑定吗？</p>','授权登录', btn, 
-            function(e){
- 
-                if (e.index == 0) {
-                    api.historyBack({}, function(ret, err) {
-                        if (!ret.status) {
-                            api.closeWin();
-                        }
-                    });
-                }
             setTimeout(function e() {
                 mui.toast('启动QQ中，稍等...')
             }, 1000);
             setTimeout(function e() {
-                mui.toast('启动QQ中，31%...')
+                mui.toast('启动QQ中，11%...')
+            }, 1200);
+            setTimeout(function e() {
+                mui.toast('启动QQ中，17%...')
+            }, 1400);
+            setTimeout(function e() {
+                mui.toast('启动QQ中，23%...')
+            }, 1600);
+            setTimeout(function e() {
+                mui.toast('启动QQ中，29%...')
+            }, 1800);
+            setTimeout(function e() {
+                mui.toast('启动QQ中，35%...')
             }, 2000);
             setTimeout(function e() {
-                mui.toast('启动QQ中，68%...')
+                mui.toast('启动QQ中，41%...')
+            }, 2200);
+            setTimeout(function e() {
+                mui.toast('启动QQ中，48%...')
+            }, 2400);
+            setTimeout(function e() {
+                mui.toast('启动QQ中，54%...')
+            }, 2600);
+            setTimeout(function e() {
+                mui.toast('启动QQ中，60%...')
+            }, 2800);
+            setTimeout(function e() {
+                mui.toast('启动QQ中，72%...')
             }, 3000);
             setTimeout(function e() {
-                mui.toast('启动QQ中，74%...')
-            }, 4000);
+                mui.toast('启动QQ中，84%...')
+            }, 3200);
             setTimeout(function e() {
                 mui.toast('启动QQ中，99%...')
-            }, 5000);
+            }, 3400);
             setTimeout(function e() {
                 mui.toast('未获取到AccessToken，绑定失败')
             }, 7000);
-        })
         })
 
         $('#xy').click(function() {
