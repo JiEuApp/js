@@ -31,17 +31,17 @@
 				$('#zz').show();
 				$('#dl').hide();
 			});
-		   
+
 		   $("body").on('tap', '#gb', function (event) {
 				$('#tx').show();
 				$('#zz').hide();
 				$('#dl').show();
 			});
-		   
+
 		   $("body").on('tap', '#wj', function (event) {
 					wj()
 			});
-			
+
 		   $("body").on('tap', '#qd', function (event) {
 				if (danjishijian) {
 					danjishijian = false;
@@ -49,12 +49,12 @@
 				} else {
 					aa()
 				}
-		
+
 			});
 		}
-		
-				
-		
+
+
+
 			function aa() {
 				var sjh = $('#sjh').val();
 
@@ -124,7 +124,6 @@
 					},5000);
                 }
 		    }
-		   
 		   
 		   	function huoqu(sjh, yqm) {
 				var con = sjh + "**" + yqm + '**' + address;
