@@ -4,7 +4,7 @@
                 var btn = ['退出', '<span style="font-weight: bold;color: #e7534d">同意</span>'];
 
                 mui.confirm(
-                    '<hr class="style-two" style="height: 3px"/><p style="height:8px;"></p><div style="text-align: left;margin-left: 3px;font-size: 13px;color: #888">欢迎使用，我们非常重视您的个人信息和隐私保护，在您使用服务之前，请您务必审慎阅读《<a href="javascript:;" id="zc" class="txt2" style="font-size: 12px;color: #888;"><u style="color: #01aaed">隐私政策</u></a>》和《<a href="javascript:;" id="xy" class="txt2" style="font-size: 12px;color: #888"><u style="color: #01aaed">用户协议</u></a>》，并充分理解协议条款内容。我们将严格按照您同意的各项条款使用您的个人信息，以便为您提供更好的服务。</div>',
+                    '<hr class="style-two" style="height: 3px"/><p style="height:8px;"></p><div style="text-align: left;margin-left: 3px;font-size: 13px;color: #888">欢迎使用 “弥漫之夜” APP，我们非常重视您的个人信息和隐私保护，在您使用“弥漫之夜”服务之前，请您务必审慎阅读《<a href="javascript:;" id="zc" class="txt2" style="font-size: 12px;color: #888;"><u style="color: #01aaed">隐私政策</u></a>》和《<a href="javascript:;" id="xy" class="txt2" style="font-size: 12px;color: #888"><u style="color: #01aaed">用户协议</u></a>》，并充分理解协议条款内容。我们将严格按照您同意的各项条款使用您的个人信息，以便为您提供更好的服务。</div>',
                     '<span style="color: #666;font-size: 20px;font-weight: bold"><b>用户协议和隐私政策</b></span>', btn,
                     function(e) {
 
