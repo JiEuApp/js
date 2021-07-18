@@ -1,5 +1,4 @@
 
-	mui.init();
 
 	   var danjishijian = true;
 	   var address = "";
