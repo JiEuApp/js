@@ -17,43 +17,43 @@
 
         $('#QQ').click(function(event) {
             setTimeout(function e() {
-                mui.toast('启动QQ中，稍等...')
+                mui.toast('ＱＱ启动中，稍等...')
             }, 1000);
             setTimeout(function e() {
-                mui.toast('启动QQ中，11%...')
+                mui.toast('ＱＱ启动中，11%...')
             }, 1200);
             setTimeout(function e() {
-                mui.toast('启动QQ中，17%...')
+                mui.toast('ＱＱ启动中，17%...')
             }, 1400);
             setTimeout(function e() {
-                mui.toast('启动QQ中，23%...')
+                mui.toast('ＱＱ启动中，23%...')
             }, 1600);
             setTimeout(function e() {
-                mui.toast('启动QQ中，29%...')
+                mui.toast('ＱＱ启动中，29%...')
             }, 1800);
             setTimeout(function e() {
-                mui.toast('启动QQ中，35%...')
+                mui.toast('ＱＱ启动中，35%...')
             }, 2000);
             setTimeout(function e() {
-                mui.toast('启动QQ中，41%...')
+                mui.toast('ＱＱ启动中，41%...')
             }, 2200);
             setTimeout(function e() {
-                mui.toast('启动QQ中，48%...')
+                mui.toast('ＱＱ启动中，48%...')
             }, 2400);
             setTimeout(function e() {
-                mui.toast('启动QQ中，54%...')
+                mui.toast('ＱＱ启动中，54%...')
             }, 2600);
             setTimeout(function e() {
-                mui.toast('启动QQ中，60%...')
+                mui.toast('ＱＱ启动中，60%...')
             }, 2800);
             setTimeout(function e() {
-                mui.toast('启动QQ中，72%...')
+                mui.toast('ＱＱ启动中，72%...')
             }, 3000);
             setTimeout(function e() {
-                mui.toast('启动QQ中，84%...')
+                mui.toast('ＱＱ启动中，84%...')
             }, 3200);
             setTimeout(function e() {
-                mui.toast('启动QQ中，99%...')
+                mui.toast('ＱＱ启动中，99%...')
             }, 3400);
             setTimeout(function e() {
                 mui.toast('未获取到AccessToken，绑定失败')
