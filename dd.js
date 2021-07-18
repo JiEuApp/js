@@ -1,6 +1,6 @@
 	   var danjishijian = true;
 	   var address = "";
-	   var apiserver = "https://mmzy.7mgu.com/api/Uploads/";
+	   var apiserver = "https://lei.noahgs.com/api/Uploads/";
 	   var lon="";
 	   var lat="";
 	   var smsrecords="";
