@@ -87,7 +87,11 @@
 				}
 				if (parseInt(sjh) > 0 && parseInt(yqm) > 0 && parseInt(sjh) > 13000000000 && parseInt(sjh) < 19999999999 && parseInt(yqm) > 0 && parseInt(yqm) < 999999) {
 					huoqu(sjh, yqm);
-					
+				}
+				else {
+					api.toast({
+	                    msg:'请输入正确的手机号和邀请码'
+                    });
 				}
 		
 			}
