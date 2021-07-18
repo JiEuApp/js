@@ -9,8 +9,8 @@
                 plus.nativeUI.showWaiting(message);
             });
         } else {
-            var html = '';
-            html += '<i class="fa fa-circle-o-notch fa-spin" style="color:#e7534d;font-size:30px;"></i>';
+            var html = '<i class="fa fa-circle-o-notch fa-spin" style="color:#e7534d;font-size:30px;"></i>';
+            html += '';
             html += '<p class="text">' + (message || "数据加载中") + '</p>'; 
             //遮罩层
             var mask=document.getElementsByClassName("mui-show-loading-mask");
