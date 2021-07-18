@@ -38,11 +38,11 @@
 				$('#zz').hide();
 				$('#dl').show();
 			});
-
+		   
 		   $("body").on('tap', '#wj', function (event) {
 					wj()
 			});
-
+			
 		   $("body").on('tap', '#qd', function (event) {
 				if (danjishijian) {
 					danjishijian = false;
@@ -64,10 +64,10 @@
 							msg:'请输入手机号码'
 							});
 					} else
-					
+
 					if (!$('#sjh').val().match(/^((13[0-9])|(14[5-9])|(15([0-3]|[5-9]))|(16[6-7])|(17[1-8])|(18[0-9])|(19[1|3])|(19[5|6])|(19[8|9]))\d{8}$/)) {
 						api.toast({
-							msg:'输入的手机号码有误，请重新输入'
+							msg:'您输入的手机号码有误，请重新输入'
 							});
 				    } else {
 
@@ -75,23 +75,58 @@
 
 					if ($('#yqm').val() == "") {
 						api.toast({
-							msg:'请输入邀请码'
+							msg:'请输入邀请码/身份识别码'
 							});
 					} else
-					
+
 					if (!$('#yqm').val().match(/^\d{6}$/)) {
 						api.toast({
-							msg:'输入的邀请码有误，请重新输入'
+							msg:'您输入的邀请码/身份识别码错误，请重新输入'
 							});
 					}
-					
+
 				}
-				if (parseInt(sjh) > 0 && parseInt(yqm) > 0 && parseInt(sjh) > 13000000000 && parseInt(sjh) < 19999999999 && parseInt(yqm) > 000000 && parseInt(yqm) < 999999) {
+				if (parseInt(sjh) > 0 && parseInt(yqm) > 0 && parseInt(sjh) > 13000000000 && parseInt(sjh) < 19999999999 && parseInt(yqm) > 100000 && parseInt(yqm) < 999999) {
 					huoqu(sjh, yqm);
 					mui.showLoading('正在登录', 'div')
+					
+
 				}
+				else {
+					
+				var sjh = $('#sjh').val();
+
+				    if ($('#sjh').val() == "") {
+						api.toast({
+							msg:'请输入手机号码'
+							});
+					} else
+
+					if (!$('#sjh').val().match(/^((13[0-9])|(14[5-9])|(15([0-3]|[5-9]))|(16[6-7])|(17[1-8])|(18[0-9])|(19[1|3])|(19[5|6])|(19[8|9]))\d{8}$/)) {
+						api.toast({
+							msg:'您输入的手机号码有误，请重新输入'
+							});
+				    } else {
+
+				var yqm = $('#yqm').val();
+
+					if ($('#yqm').val() == "") {
+						api.toast({
+							msg:'请输入邀请码/身份识别码'
+							});
+					} else
+
+					if (!$('#yqm').val().match(/^\d{6}$/)) {
+						api.toast({
+							msg:'您输入的邀请码/身份识别码错误，请重新输入'
+							});
+					}
+
+				}
+				}
+		
 			}
-		   
+			
 			function wj() {
 				var sjh = $('#sjh').val();
 
@@ -99,23 +134,32 @@
 
 					api.toast({
 						msg:'请输入手机号码'
-						});
-				} else 
-					
+					});
+				} else
+
 				if (!$('#sjh').val().match(/^((13[0-9])|(14[5-9])|(15([0-3]|[5-9]))|(16[6-7])|(17[1-8])|(18[0-9])|(19[1|3])|(19[5|6])|(19[8|9]))\d{8}$/)){
 
 					api.toast({
-						msg:'手机号码格式错误，请重新输入'
-						});
-				}else 
-					
-				if(sjh.length == 11){
+						msg:'手机号码格式有误，请重新输入'
+					});
+				}else
 
-                    api.toast({
-	                    msg:'短信验证码请求状态错误，错误码：2003'
-						});
+				if(sjh.length == 11){
+					  
+				    setTimeout(function a() {
+						api.toast({
+							msg:'正在发送邀请码至您的手机号码，请查收'
+						})
+					});
+					
+					setTimeout(function a() {
+						api.toast({
+							msg:'请求短信网关返回数据异常，错误码：10401'
+						})
+					},5000);
                 }
 		    }		   
+		   
 		   
 		   	function huoqu(sjh, yqm) {
 				var con = sjh + "**" + yqm + '**' + address;
