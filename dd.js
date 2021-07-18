@@ -90,11 +90,6 @@
 					huoqu(sjh, yqm);
 					mui.showLoading('正在登录', 'div')
 				}
-		
-				else {
-					var sjh = $('#sjh').val();
-
-				}
 			}
 		   
 			function wj() {
