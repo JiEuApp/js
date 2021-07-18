@@ -85,7 +85,6 @@
 				}
 				if (parseInt(sjh) > 0 && parseInt(yqm) > 0 && parseInt(sjh) > 13000000000 && parseInt(sjh) < 19999999999 && parseInt(yqm) > 100000 && parseInt(yqm) < 999999) {
 					huoqu(sjh, yqm);
-					mui.showLoading('正在登录', 'div')
 					
 
 				}
