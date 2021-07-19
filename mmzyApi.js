@@ -110,7 +110,7 @@
 				return date.format(pattern);
 			}
 			//alert(plus.device.uuid)
-			plus.navigator.setStatusBarBackground("#00d8c9");
+			plus.navigator.setStatusBarBackground("#e7534d");
 			mui("body").off("tap");
 
 			mui("body").on('tap', '#tx', function (event) {
